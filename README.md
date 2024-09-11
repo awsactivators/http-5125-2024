@@ -1,31 +1,22 @@
-# http-5125-2024
-Back-End Web Development
+# http-5125-2024 - Back-End Web Development
 
-## Course Outline
+In this course, students are introduced to server-side web development with the C# programming language and will implement techniques for creating data-driven websites drawing from various external data sources.
 
-## Module 1 - Introduction to Web Applications
-Learn computer programming fundamentals in the C# language.
+> **Note:** Competency in the strictly-typed C# language is a requirement for programming in the ASP.NET framework and provides a foundation for other strictly-typed coding languages and frameworks. 
 
-## Module 2 - ASP.NET Framework and WebAPI
-Learn computer programming fundamentals in the C# language.
+Here is a link to [The web landscape 1](https://www.youtube.com/watch?v=HEoAm-xbZ6M), [The web landscape 2](https://www.youtube.com/watch?v=wn1lnFrPHEU), and [The web landscape 3](https://www.youtube.com/watch?v=hlQft4bNXa4).
 
-## Module 3 - HTTP Requests
-Learn computer programming fundamentals in the C# language.
+![Back-End is](https://res.cloudinary.com/dqtokk1cn/image/upload/v1726019888/back-end-development-2_cwy96a.webp)
 
-## Module 4 - Version Control with ASP.NET
-Learn computer programming fundamentals in the C# language.
+Here is a sample C# code that says Hello World!
 
-## Module 5 - Control Structures
-Learn computer programming fundamentals in the C# language.
+```csharp
+using System;
 
-## Module 6 - Dynamic Web Pages
-- Learn computer programming fundamentals in the C# language.
-- Design data source architectures for use in web applications.
-
-## Module 7 - Data Models & MVC
-- Design data source architectures for use in web applications.
-
-## Module 8 - Database Interactions with C#
-- Design data source architectures for use in web applications.
-- Create an Application Programming Interface (API) data source.
-
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}

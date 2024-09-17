@@ -31,3 +31,18 @@ https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/numbers
 
 WATCH: Programming Logic Pt1 (16:46)
 https://www.youtube.com/watch?v=cnhZ9rEIHsE&feature=youtu.be
+
+Mozilla Developer Network's HTML reference 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+Form design best practices 
+https://medium.com/nextux/form-design-best-practices-9525c321d759
+
+MDN page about the input element.
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+
+Forms page.
+https://developer.mozilla.org/en-US/docs/Learn/Forms
+
+Another article explaining semantic layout tags. 
+https://www.semrush.com/blog/semantic-html5-guide/

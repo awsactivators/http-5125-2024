@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/week3-http-request.props" />
+</Project>

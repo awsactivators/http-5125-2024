@@ -46,3 +46,10 @@ https://developer.mozilla.org/en-US/docs/Learn/Forms
 
 Another article explaining semantic layout tags. 
 https://www.semrush.com/blog/semantic-html5-guide/
+
+
+
+Q2:
+How should I handle invalid or missing parameters across the assignment? what should be returned if no name is provided, or if the name is a numeric value? Should I return a specific error response (like 400 Bad Request)?
+
+Question 5, how should I handle cases where the secret value is not a valid integer? Should the endpoint return a specific error, or would it be fine to return a default message?

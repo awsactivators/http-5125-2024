@@ -13,14 +13,64 @@ namespace CoreModelViewController.Controllers
             return View();
         }
 
-        // GET : /Candy/Shop -> A webpage that asks the user what kind candy they want to order
+        // GET : /Costume/Store -> A webpage that asks the user what kind of costume they want to buy
         [HttpGet]
-        public IActionResult Shop()
+        public IActionResult Store()
         {
-            // Route to /Views/Candy/Shop.cshtml
+            // Route to /Views/Costume/Store.cshtml
             return View();
         }
 
+        // GET: /Costume/OrderSummary?CustomerName={CustomerName}&CostumeType={CostumeType}&CostumeSize={CostumeSize} -> A webpage which shows the order details
+        [HttpGet]
+        public IActionResult OrderSummay(string CustomerName, string CostumeType, string CostumeSize)
+        {
+          // test that you have received the information
+          Debug.WriteLine("The customer name is " +CustomerName);
+          Debug.WriteLine("The costume type is " +CostumeType);
+          Debug.WriteLine("The costume size is " +CostumeSize);
+
+          //use ViewData to send inormation to the view
+          ViewData["CustomerName"] = CustomerName;
+          ViewData["CostumeType"] = CostumeType;
+          ViewData["CostumeSize"] = CostumeSize;
+          
+          //todo: compute order total
+          decimal VampirePrice = 50.99m;
+          decimal GhostPrice = 30.99m;
+          decimal CatPrice = 40.99m;
+
+          decimal OrderTotal = 0m;
+
+          if(CostumeType == "Vampire")
+          {
+            OrderTotal += VampirePrice;
+          }else if(CostumeType == "Ghost"){
+            OrderTotal += GhostPrice;
+          } else if (CostumeType == "Cat"){
+            OrderTotal += CatPrice;
+          }
+
+          if(CostumeSize == ""){
+            
+          }
+
+
+          ViewData["OrderTotal"] = OrderTotal;
+
+          // direct to /View/Costume/OrderSummary.cshtml
+          return View();
+        }
+
+        
+        
+
+
+
+
+
+
+        
         // POST: /Candy/Checkout
         // Header: Content-Type: application/x-www-form-urlencoded
         // FORM DATA: OrderAddress={OrderAddress}&CandyNumPieces={CandyNumPieces}&CandyType={CandyType} -> A checkout webpage

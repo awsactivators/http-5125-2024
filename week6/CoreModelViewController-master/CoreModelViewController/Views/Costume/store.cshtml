@@ -1,0 +1,32 @@
+<h1>Order a Costume!</h1>
+
+<form method="GET" action="/Costume/OrderSummary">
+  <div>
+    <label for="CustomerName">Order Name</label>
+  </div>
+  <div>
+    <input type="text" id="CustomerName" name="CustomerName" />
+  </div>
+  <div>
+    <label for="CostumeType">Costume Type</label>
+  </div>
+  <div>
+    <select name="CostumeType" id="CostumeType">
+      <option value="Vampire">Vampire ($50.99)</option>
+      <option value="Ghost">Ghost ($30.99)</option>
+      <option value="Cat">Cat ($40.99)</option>
+    </select>
+  </div>
+  <div>
+    <label for="CostumeSize">Costume Size</label>
+  </div>
+  <div>
+    <select name="CostumeSize" id="CostumeSize">
+      <option value="Kids">Kids (+$0)</option>
+      <option value="Adult">Adult (+$10)</option>
+    </select>
+  </div>
+  <div>
+    <button type="submit">Order Now</button>
+  </div>
+</form>

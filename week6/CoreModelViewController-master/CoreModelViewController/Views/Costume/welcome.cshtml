@@ -1,6 +1,26 @@
-<h1>Costume Store</h1>
-<p>Welcome to our store!</p>
-<p>Address of Order: @ViewData["OrderAddress"]</p>
-<p>Pieces of Candy: @ViewData["CandyNumPieces"]</p>
-<p>Candy Type: @ViewData["CandyType"]</p>
-<p>Checkout Amount: $@ViewData["OrderTotal"]</p>
+@{
+  // This is server(C#) comment
+  string Today = DateTime.Now.ToString("yyy-mm-dd");
+  string CourseCode = "5125";
+  }
+<!-- This is a client(html) comment -->
+<h1>Costume Store @CourseCode</h1>
+<p>Welcome to our store! The date is @Today</p>
+
+@{
+  string classname = "blue";
+  string hexcode = "0000FF";
+}
+
+<style>
+    .red {background: red;}
+    .blue {background: #@hexcode;}
+</style>
+
+<div class="@classname" style="width:100px; height: 100px;">&nbsp;</div>
+
+@{
+  string StorePath = "/Costume/Store";
+}
+
+<a href="@StorePath">Order a Costume</a>

@@ -1,0 +1,42 @@
+﻿@model CoreModelViewController.Models.PizzaOrder
+@{
+    ViewData["Title"] = "Order";
+}
+
+<h1>Thank you for your order!</h1>
+
+<h2>Summary:</h2>
+<div>
+    <div>Time: @Model.OrderDate</div>
+    <div>Name: @Model.CustomerName</div>
+    <div>Pizza Size: @Model.PizzaSize</div>
+    <div>Toppings: 
+        
+        <ul>
+        @foreach(string Topping in (List<string>) Model.PizzaToppings)
+        {
+            <li>@Topping</li>
+        }
+        </ul>
+    </div>
+    <div>Drink: @Model.OrderDrink</div>
+</div>
+<hr />
+<div>
+    <div>Before Discount: $@Model.OrderPreTotal</div>
+    <div>Order Code: @Model.OrderCode</div>
+    <div>Total Discount: $@Model.OrderDiscountTotal</div>
+    <div>Sub Total: $@Model.OrderSubTotal</div>
+    <div>@Model.OrderTaxName @Model.OrderTaxRate%:  $@Model.OrderTaxAmt </div>
+    <div>Order Total: $@Model.OrderTotal</div>
+</div>
+
+
+
+
+
+
+
+
+
+

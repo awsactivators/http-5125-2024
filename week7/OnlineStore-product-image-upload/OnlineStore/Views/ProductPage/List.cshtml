@@ -1,0 +1,20 @@
+﻿@model IEnumerable<ProductDto>
+
+<a href="/ProductPage/New">New</a>
+<div class="row">
+@foreach(var Product in Model)
+{
+    <div>
+        <a href="/ProductPage/Details/@Product.ProductId">
+        @if (Product.HasProductPic)
+        {
+                <img style="width:150px; height:auto;" src="@Product.ProductImagePath" />
+        }
+        
+        <span>@Product.ProductName $@Product.ProductPrice</span>
+        
+        </a>
+        
+    </div>
+}
+</div>
